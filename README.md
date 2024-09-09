@@ -104,11 +104,18 @@ Your journey will take you through the wildness of the American Midwest and acro
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+
+   > The value of the drovers variable comes from the hireDrovers function with the cattleToDrive parameter. When that line of code is run, it will invoke the hireDrovers function that is being imported from the drovers.js module. The hireDrovers function is set to run through the drovers array.
+
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+
+   > In this for...of loop, drovers is an array of drover objects with while drover is an object during each iteration of the loop.
+drovers has been assigned the hireDrovers(cattleToDrive) function call that will iterate through an array.
+
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+
+   >(https://www.loom.com/share/d498e363d7674f8a9ffe51b38830a403?sid=4b7fc7a1-7d92-424e-ae53-455b7bdf511c)
+
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
@@ -116,11 +123,16 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
+
+   > This is a for loop that is used to run lines of code multiple times. In the for loop, the variable forestNumber is set to 0. The next part of the loop is the condition that must be met to continue the loop, so forestNumber < areas.forests must be true. forestNumber++ adds 1 to the forestNumber variable for each iteration. journey.push("forest") will add the string "forest" to the end of the journey array for each iteration.
+
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+
+   > The database variable is an array with two properties, cattleTypes and drovers. cattleTypes is an array with two objects; id and breed. drovers is another array with four objects; "id", "first_name", "last_name", "gender".
+
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
+
+   > herdSize is the parameter being passed through the hireDrovers() function. Currently, herdSize has been declared with no value.
 
 
 ## Final Step
